@@ -34,21 +34,7 @@ class AssetManager
 	 *
 	 * @var String
 	 */
-	const VIEW_PATH = __DIR__ . '/../Views';	
-
-	/**
-	 * Javascript Assets
-	 *
-	 * @var Array
-	 */
-	const JS_ASSETS = ['app.min.js'];	
-
-	/**
-	 * CSS Assets
-	 *
-	 * @var Array
-	 */
-	const CSS_ASSETS = ['app.min.css'];	
+	const VIEW_PATH = __DIR__ . '/../Views';		
 
 	/**
 	 * Constructor
@@ -77,7 +63,7 @@ class AssetManager
 	 */
 	public function javascript($classes)
 	{	
-		foreach (self::JS_ASSETS as $asset)
+		foreach (['app.min.js'] as $asset)
 		{
 			echo '<script src="' . $this->url('/assets/js/' . $asset) . '"></script>';
 		}
@@ -90,7 +76,7 @@ class AssetManager
 	 */
 	public function css($classes)
 	{	
-		foreach (self::CSS_ASSETS as $asset)
+		foreach (['app.min.css'] as $asset)
 		{
 			echo '<link rel="stylesheet" href="' . $this->url('/assets/css/' . $asset) . '">';
 		}
