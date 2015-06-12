@@ -8,10 +8,10 @@ Misc points:
 
 ### Installation
 
-1. Simply clone the repository: 
+1. Simply clone this repository.
 2. Setup your hosts and server to point a `./public` directory.
 
-**NOTE:** I did not have time for `.htaccess` rewrite rules so you must setup a domain e.g. `http://the-problem.app`.
+**NOTE:** I did not have time for `.htaccess` rewrite rules so you must setup a domain e.g. `http://the-problem.app` pointing to the `./public` directory as root.
 
 ## Why so much code for a small problem?
 
@@ -19,7 +19,7 @@ My assumption was this exercise is to demonstrate my knowledge in **software des
 
 Also I wanted to demonstrate my ability to use modern development tools such as **git, package managers and task runners**.
 
-Furthering this train of  through I demonstrated my ability as a **full-stack** developer implementing the front-end in **AngularJS*.
+Furthering this train of  through I demonstrated my ability as a **full-stack** developer implementing the front-end in **AngularJS**.
 
 ### Design Patterns & Concepts
 
@@ -49,4 +49,4 @@ Furthering this train of  through I demonstrated my ability as a **full-stack** 
 
 ### Time 
 
-Developed in ~3hrs
+Developed in ~3.3hrs
