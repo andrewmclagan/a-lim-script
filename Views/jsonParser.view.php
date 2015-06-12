@@ -35,7 +35,7 @@ use TheProblem\Application;
                 <div class="row">
 
                     <div class="col-md-6">
-                        <h3>Original JSON</h3>
+                        <h3>Original JSON ($input_string)</h3>
                         <pre><code class="javascript" id="graph-data">{{ data.graphData }}</code></pre>
                     </div>
 
