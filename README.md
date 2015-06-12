@@ -1,5 +1,11 @@
 # The Solution
 
+Misc points:
+
+* Unix timestamp is in milliseconds, needs converting
+* Use DateTime to set proper timezones for accurate stamp conversion
+* merge smaller array into larger array, not the reverse
+
 ### Installation
 
 1. Simply clone the repository: 
@@ -9,11 +15,11 @@
 
 ##3 Why so much code for a small problem?
 
-My assumption was this exercise is to demonstrate my knowledge in **software design patterns** and how to execute them in a real world problem. I developed a small micro MVC framework. There are some very obvious flaws with the current settup although I think it does demonstrate my abilities and basic understanding of the concepts involved.
+My assumption was this exercise is to demonstrate my knowledge in **software design patterns** and how to execute them in a real world problem. I developed a small micro MVC framework. There are some very obvious flaws with the current setup although I think it does demonstrate my abilities and basic understanding of the concepts involved.
 
-Also I wanted to demostrate my ability to use modern development tools such as **git, package managers and task runners**.
+Also I wanted to demonstrate my ability to use modern development tools such as **git, package managers and task runners**.
 
-Furthering this train of  through I demonstrated my ability as a **full-stack** developer implimenting the frontend in **AngularJS*.
+Furthering this train of  through I demonstrated my ability as a **full-stack** developer implementing the front-end in **AngularJS*.
 
 ### Design Patterns & Concepts
 
@@ -21,9 +27,9 @@ Furthering this train of  through I demonstrated my ability as a **full-stack** 
 * Service Provider Pattern
 * MVC View Model Controller pattern
 * Dependancy Inversion Pattern (weakly)
-* Single Responsebility
+* Single Responsibility
 * Basic SOLID principals
-* Domain Drivern Design
+* Domain Driven Design
 
 ### Tools Used
 
