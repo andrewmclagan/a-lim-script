@@ -9,7 +9,7 @@ angular.module('theProblem', [])
 		 * 
 		 * @var Object
 		 */ 
-		$scope.data = {
+		$scope.data = {  
 			graphData: 		window.ssGraphData,
 			processedData: 	'Awaiting User Interaction...',
 			varDumped: 		'Awaiting User Interaction...',

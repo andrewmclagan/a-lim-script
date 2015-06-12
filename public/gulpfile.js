@@ -26,8 +26,8 @@ gulp.task('js', function() {
 	];
 
     gulp.src(files)
-    	//.pipe(ngAnnotate())
-    	//.pipe(uglify())
+    	.pipe(ngAnnotate())
+    	.pipe(uglify())
     	.pipe(concat('app.min.js'))
     	.pipe(gulp.dest('./assets/js'))
 });
