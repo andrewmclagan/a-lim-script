@@ -1,5 +1,7 @@
 # The Solution
 
+if you have trouble installing view [http://the-problem.andrewmclagan.com/](http://the-problem.andrewmclagan.com/)
+
 Misc points:
 
 * Unix timestamp is in milliseconds, needs converting
