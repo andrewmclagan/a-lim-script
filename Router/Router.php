@@ -2,6 +2,7 @@
 
 use TheProblem\Application;
 use TheProblem\ServiceProviders\Request;
+use TheProblem\ServiceProviders\Response;
 
 class Router
 {
@@ -106,14 +107,14 @@ class Router
             { 
                 $this->resolveAction($route['controller'], $route['route'], $route['verb']);   
             }
-            else {
-                
+            else 
+            {    
                 throw new \Exception('Hmm.. seems you got your HTTP verbs wrong: '.$route['verb']);
             }
         }
-        else {
-            
-            throw new \Exception('HTTP 404: route not found: ' . $this->request->getPath());
+        else 
+        {
+            Response::view('404');
         }
     }     
 
