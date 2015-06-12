@@ -24,8 +24,3 @@ use TheProblem\Application;
         </div>
     </div>
 </div>
-
-<div class="spinner-bk spinner-part"></div>
-<div class="sk-spinner spinner-part sk-spinner-double-bounce">
-    <div class="sk-spinner sk-spinner-rotating-plane"></div>
-</div>  

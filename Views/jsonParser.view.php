@@ -70,6 +70,11 @@ use TheProblem\Application;
         </section>
         <!-- / AngularJS Application -->
 
+        <div class="spinner-bk spinner-part"></div>
+        <div class="sk-spinner spinner-part sk-spinner-double-bounce">
+            <div class="sk-spinner sk-spinner-rotating-plane"></div>
+        </div>          
+
 
         <?php Application::resolve('assetManager')->javascript('app.min.js'); ?>
 
