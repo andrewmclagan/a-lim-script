@@ -53,9 +53,9 @@ angular.module('theProblem', [])
 			if($scope.requestLock) return; // lets lock the requests down while making one
 			else $scope.requestLock = true;
 
-			jQuery('.spinner-part').removeClass('hidden');
+			$('.spinner-part').removeClass('hidden');
 
-        	jQuery.ajax({
+        	$.ajax({
         	    method:     'POST',
         	    url:        appBaseURL + '/' + route,
         	    data:       data,
@@ -69,7 +69,7 @@ angular.module('theProblem', [])
         	    complete:   function() {
 	
 					$scope.requestLock = false; // unlock the request
-        	        jQuery('.spinner-part').addClass('hidden');
+        	        $('.spinner-part').addClass('hidden');
         	    }
         	});			
 		};  		
@@ -81,7 +81,7 @@ angular.module('theProblem', [])
     	 */    	
    		angular.element(document).ready(function () {
 
-   			
+   			$('.spinner-part').addClass('hidden');
    		});	
 
    		hljs.initHighlightingOnLoad();
