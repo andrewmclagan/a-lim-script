@@ -1,0 +1,87 @@
+/*
+|--------------------------------------------------------------------------
+| LESS Variables
+|--------------------------------------------------------------------------
+*/
+
+@color-primary: #90A4AE;
+@color-seconday: #CFD8DC;
+@color-tertiary: #CFD8DC;
+@color-dark: #37474F;
+
+@color-blue-medium: #4FC3F7;
+
+/*
+|--------------------------------------------------------------------------
+| Application Imports
+|--------------------------------------------------------------------------
+*/
+
+@import '../vendor/bootstrap/dist/css/bootstrap.min.css';
+@import '../vendor/highlight.js/styles/default.css';
+
+/*
+|--------------------------------------------------------------------------
+| Misc Styles
+|--------------------------------------------------------------------------
+*/
+
+.theproblem-page {
+	h1, h2, h3, h4, h5, h6 {
+		text-align: center;
+		color: #777777;
+		font-weight: 300;
+		letter-spacing: 1px;
+	}
+
+	code {
+		transition: all 0.8s;
+	}
+	pre {
+		background: @color-tertiary;
+		transition: all 0.8s;
+	}	
+}
+
+.btn.btn-large {
+	padding: 20px 80px;
+	font-size: 20px;
+	margin: 30px 0;
+}
+
+.nav-top {
+	
+	margin: 0 0 60px 0;
+	background: @color-primary;
+
+	ul.nav.nav-pills.pull-right {
+		
+		> li > a {
+			
+			padding: 18px 30px;
+			background: transparent;
+			color: @color-tertiary;		
+			transition: all 0.3s;
+		}
+		> li.active > a {
+			background: transparent;
+		}
+		> li > a.empty {
+			background: transparent;
+			color: @color-dark;
+			font-weight: 500;
+			text-transform: uppercase;
+			font-size: 12px;
+			letter-spacing: 2px;
+			padding-top: 21px;
+
+			&:hover {
+				color: inherit;
+			}
+		}
+
+		> li > a:hover {
+			color: #fff;
+		}
+	}
+}
