@@ -13,7 +13,7 @@ Misc points:
 
 **NOTE:** I did not have time for `.htaccess` rewrite rules so you must setup a domain e.g. `http://the-problem.app`.
 
-##3 Why so much code for a small problem?
+## Why so much code for a small problem?
 
 My assumption was this exercise is to demonstrate my knowledge in **software design patterns** and how to execute them in a real world problem. I developed a small micro MVC framework. There are some very obvious flaws with the current setup although I think it does demonstrate my abilities and basic understanding of the concepts involved.
 
