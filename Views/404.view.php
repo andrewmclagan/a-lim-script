@@ -27,7 +27,8 @@ use TheProblem\Application;
                         <h4>Have you tried:</h4>
                         <ul>
                             <li>Have you setup a proper domain e.g. `http://the-problem.local` with `/public` as the root?</li>
-                            <li>See `./README.md`</li>li>
+                            <li>Is this a broken link?</li>
+                            <li>See `./README.md`</li>
                         </ul>
                     </div>
                 </div>                

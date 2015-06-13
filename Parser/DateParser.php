@@ -1,12 +1,12 @@
-<?php namespace TheProblem\Formatter;
+<?php namespace TheProblem\Parser;
 
 /**
- * Formats dates into the  desiered format
+ * Parses dates into the  desiered format
  *
  * @author Andrew McLagan <andrewmclagan@gmail.com>
  */
 
-class DateFormatter 
+class DateParser
 {
 	/**
 	 * Timestamp
@@ -63,9 +63,9 @@ class DateFormatter
     {
     	if ($this->isValidTimestamp($timestamp))
     	{
-    		$this->timestamp = (integer) $timestamp;
+    		$this->timestamp = (integer) $timestamp; // type cast
 
-    		if ($this->timestamp > 9999999999)
+    		if ($this->timestamp > 9999999999) // covert if in miliseconds
     		{
     			$this->timestamp = $this->timestamp / 1000;
     		}
@@ -89,7 +89,7 @@ class DateFormatter
 
     	$dateTime = new \DateTime();
 
-    	$dateTime->setTimezone(new \DateTimeZone($this->timezone));
+    	$dateTime->setTimezone(new \DateTimeZone($this->timezone)); // force timezone
 
     	$dateTime->setTimestamp($this->timestamp);
 
@@ -97,7 +97,7 @@ class DateFormatter
     }  	    
 
 	/**
-	 * Validates a unix timestamp
+	 * Validates a unix timestamp, very basic
 	 *
 	 * @param  Int $timestamp
 	 * @return  void

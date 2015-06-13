@@ -2,12 +2,6 @@
 
 if you have trouble installing view [http://the-problem.andrewmclagan.com/](http://the-problem.andrewmclagan.com/)
 
-Misc points:
-
-* Unix timestamp is in milliseconds, needs converting
-* Use DateTime to set proper timezones for accurate stamp conversion
-* merge smaller array into larger array, not the reverse
-
 ### Installation
 
 1. Simply clone this repository.
@@ -17,11 +11,9 @@ Misc points:
 
 ## Why so much code for a small problem?
 
-My assumption was this exercise is to demonstrate my knowledge in **software design patterns** and how to execute them in a real world problem. I developed a small micro MVC framework. There are some very obvious flaws with the current setup although I think it does demonstrate my abilities and basic understanding of the concepts involved.
+The problem could have been solved quite fast with two of the core classes in this repo `TheProblem\Parser\DataParser` and `TheProblem\Parser\DateParser`. Although...
 
-Also I wanted to demonstrate my ability to use modern development tools such as **git, package managers and task runners**.
-
-Furthering this train of  through I demonstrated my ability as a **full-stack** developer implementing the front-end in **AngularJS**.
+I assumed this exercise was to demonstrate knowledge of **software design patterns** and their implementation. I developed a small, fast and dirty micro MVC framework to demonstrate some of these basic patterns and principles. Also demonstrating abilities with development tools such as **git, package managers and task runners**. Furthering this train of thought by demonstrating my ability as a **full-stack** developer implementing the front-end in **AngularJS**.
 
 ### Design Patterns & Concepts
 
@@ -30,14 +22,15 @@ Furthering this train of  through I demonstrated my ability as a **full-stack** 
 * MVC View Model Controller pattern
 * Dependancy Inversion Pattern (weakly)
 * Single Responsibility
-* Basic SOLID principals
+* Basic SOLID principles
 * Domain Driven Design
 
 ### Tools Used
 
 * Git (source control)
 * Composer, NPM, Bower (package management)
-* Gulp (task runer)
+* Gulp (task runner)
+* LESS
 * more...
 
 ### libraries and dependancies
@@ -52,3 +45,4 @@ Furthering this train of  through I demonstrated my ability as a **full-stack** 
 ### Time 
 
 Developed in ~3.3hrs
+

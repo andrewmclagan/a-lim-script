@@ -1,6 +1,6 @@
 <?php namespace TheProblem\Controllers;
 
-use TheProblem\Formatter\DataParser;
+use TheProblem\Parser\DataParser;
 use TheProblem\ServiceProviders\Response;
 
 /**

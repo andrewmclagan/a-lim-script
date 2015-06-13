@@ -1,4 +1,4 @@
-<?php namespace TheProblem\Formatter;
+<?php namespace TheProblem\Parser;
 
 /**
  * Parses data array into combined format
@@ -37,11 +37,11 @@ class DataParser
 	private $result;		
 
 	/**
-	 * Date Formatter 
+	 * Date Parser 
 	 * 
 	 * @var Array
 	 */
-	private $dateFormatter;	
+	private $dateParser;	
 
 	/**
 	 * Construct
@@ -50,7 +50,7 @@ class DataParser
 	 */	
     public function __construct()
     {
-    	$this->dateFormatter = new DateFormatter; 
+    	$this->dateParser = new DateParser; 
     }  			
 
 	/**
@@ -107,11 +107,11 @@ class DataParser
 	 */	
     public function convertTimestamps()
     {    
-    	$this->dateFormatter->setFormat('Y-m-d H:i:s')->setTimezone('Australia/Melbourne');
+    	$this->dateParser->setFormat('Y-m-d H:i:s')->setTimezone('Australia/Melbourne');
 
     	foreach ($this->result as $arrayItemKey => $arrayItem)
     	{
-    		if ($formatted = $this->dateFormatter->convert($arrayItemKey))
+    		if ($formatted = $this->dateParser->convert($arrayItemKey))
     		{
     			$this->result[$formatted] = $arrayItem;
 
