@@ -44,5 +44,5 @@ I assumed this exercise was to demonstrate knowledge of **software design patter
 
 ### Time 
 
-Developed in ~3.3hrs
+Developed in ~4.3hrs
 
